@@ -1,0 +1,22 @@
+body {
+  padding: 0 50px;
+}
+
+h1 {
+  font-size: 100px;
+  border: 20px solid black;
+  /* outline: 20px solid black; */
+
+}
+
+header {
+  background-color: fuchsia;
+  color: lime;
+}
+
+p {
+  padding: 10px;
+  border-left: 2px solid black;
+  margin-top: 20px;
+  width: 40%;
+}
