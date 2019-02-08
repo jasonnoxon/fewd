@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Sarabun');
+
+body {
+  margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+}
+
+p {
+  font-family: 'Sarabun', sans-serif;
+}
+
+a {
+  font-family: 'Sarabun', sans-serif;
+  text-decoration: none;
+}
+
+.banner {
+  background-color: lightgrey;
+  width:100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.banner h1, .banner h2 {
+  text-align: center;
+}
+
+.banner h1 {
+  position: relative;
+  margin-top: 20px;
+}
