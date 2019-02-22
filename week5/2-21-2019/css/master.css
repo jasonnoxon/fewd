@@ -1,0 +1,17 @@
+:root {
+  --main-font: 'Helvetica', sans-serif;
+  --secondary-font: serif;
+  --main-color: rgba(34,56,32,.5);
+  --secondary-color: grey;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--main-font);
+  color: var(--secondary-color);
+}
+
+.service-card {
+  font-family: var(--secondary-font);
+  background-color: var(--main-color);
+  float:left;
+}
