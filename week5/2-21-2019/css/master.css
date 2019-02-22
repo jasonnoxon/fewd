@@ -15,3 +15,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--main-color);
   float:left;
 }
+
+p {
+  padding-left: 10px;
+}
