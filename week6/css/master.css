@@ -1,0 +1,30 @@
+:root {
+  --simple-border: 1px solid blue;
+}
+
+#page-wrapper {
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: linear-gradient(to bottom,rgba(255,153,51,.3),rgb(0,0,0,.3));
+  /* overflow: hidden; */
+}
+
+#div1, #div2 {
+  width: 30%;
+  height: 100px;
+  float: left;
+  border: var(--simple-border);
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+div:nth-child(2) {
+  width: 100px;
+  height: 200px;
+  border: var(--simple-border);
+  overflow:hidden;
+}
+
+fieldset {
+   clear: both;
+ }
