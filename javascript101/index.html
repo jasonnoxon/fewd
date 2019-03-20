@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <fieldset>
+      <legend id="my-button-legend"></legend>
+      <button id="my-button">Click Me!</button>
+    </fieldset>
+
+    <fieldset>
+      <legend id="go-button-legend"></legend>
+      <button id="go-button">Go!</button>
+    </fieldset>
+
+    <script type="text/javascript">
+      var myButton = document.querySelector("#my-button");
+      var myButtonLegend = document.querySelector("#my-button-legend");
+      var myButtonClicks = 0;
+
+      var goButton = document.querySelector("#go-button");
+      var goButtonLegend = document.querySelector("#go-button-legend");
+      var goButtonClicks = 0;
+
+      function updateButtonLabel(obj, numClicks) {
+
+        var maxClicks = 10;
+        var timeLabel = " times.";
+
+        if (numClicks === 1) {
+          timeLabel = " time.";
+        }
+
+        var message = "This button clicked " + numClicks + timeLabel;
+
+        // var timeLabel = numClicks === 1 ? " time." : " times.";
+
+        if (numClicks > maxClicks) {
+          message = "ENOUGH ALREADY!";
+          obj.style.backgroundColor = "red";
+        }
+
+        obj.innerHTML = message;
+      }
+
+      updateButtonLabel(myButtonLegend, myButtonClicks);
+      updateButtonLabel(goButtonLegend, goButtonClicks);
+
+      myButton.addEventListener( "click", function(){
+        myButtonClicks++;
+        updateButtonLabel(myButtonLegend, myButtonClicks);
+      });
+
+      goButton.addEventListener("click", function() {
+        goButtonClicks++;
+        updateButtonLabel(goButtonLegend, goButtonClicks);
+      })
+
+      goButton.addEventListener("mouseover", function() {
+        alert("You moused over!");
+      })
+
+      window.addEventListener("scroll", function() {
+        alert("Look at the big brain on Brad!");
+      });
+
+    </script>
+  </body>
+</html>
