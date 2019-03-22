@@ -1,0 +1,14 @@
+div {
+  display:inline-block;
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
+#clickable-div {
+  background-color: rgb(100,100,100);
+}
+
+#clickable-div-too {
+  background-color: rgb(200,200,200);
+}
